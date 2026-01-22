@@ -20,7 +20,7 @@ export default function About() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-hidden">
+    <div className="min-h-screen bg-[#0a0a0a] text-white overflow-hidden">
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -29,7 +29,7 @@ export default function About() {
             alt="Connecting People and Spaces" 
             className="w-full h-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/80 via-[#0a0a0a]/50 to-[#0a0a0a]" />
         </div>
         
         <div className="container relative z-10 px-4 text-center">
@@ -53,7 +53,7 @@ export default function About() {
       </section>
 
       {/* Evolution Story */}
-      <section className="py-20 bg-background/50">
+      <section className="py-20 bg-[#0a0a0a]">
         <div className="container px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div 
@@ -117,7 +117,7 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              <Card className="bg-background/50 border-white/10 h-full hover:border-primary/50 transition-colors">
+              <Card className="bg-[#1a1a1a] border-white/10 h-full hover:border-primary/50 transition-colors">
                 <CardContent className="p-8 flex flex-col items-center text-center">
                   <div className="w-16 h-16 rounded-full bg-blue-500/20 flex items-center justify-center mb-6 text-blue-400">
                     <Ticket size={32} />
@@ -137,7 +137,7 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              <Card className="bg-background/50 border-primary/50 h-full shadow-[0_0_30px_rgba(255,77,79,0.1)]">
+              <Card className="bg-[#1a1a1a] border-primary/50 h-full shadow-[0_0_30px_rgba(255,77,79,0.1)]">
                 <CardContent className="p-8 flex flex-col items-center text-center">
                   <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-6 text-primary">
                     <Monitor size={32} />
@@ -157,7 +157,7 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
             >
-              <Card className="bg-background/50 border-white/10 h-full hover:border-green-500/50 transition-colors">
+              <Card className="bg-[#1a1a1a] border-white/10 h-full hover:border-green-500/50 transition-colors">
                 <CardContent className="p-8 flex flex-col items-center text-center">
                   <div className="w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center mb-6 text-green-400">
                     <ShoppingBag size={32} />
@@ -188,7 +188,7 @@ export default function About() {
       </section>
 
       {/* Core Values */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-[#0a0a0a]">
         <div className="container px-4">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -232,7 +232,7 @@ export default function About() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-t from-primary/10 to-background border-t border-white/10">
+      <section className="py-20 bg-gradient-to-t from-primary/10 to-[#0a0a0a] border-t border-white/10">
         <div className="container px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
             準備好加入我們的生態系了嗎？
