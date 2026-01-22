@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Advertiser from "./pages/Advertiser";
 import MediaOwner from "./pages/MediaOwner";
 import Pricing from "./pages/Pricing";
+import About from "./pages/About";
 
 
 function Router() {
@@ -17,6 +18,7 @@ function Router() {
       <Route path={"/solutions/advertiser"} component={Advertiser} />
       <Route path={"/solutions/media-owner"} component={MediaOwner} />
       <Route path={"/pricing"} component={Pricing} />
+      <Route path={"/about"} component={About} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
