@@ -73,8 +73,8 @@ export default function Advertiser() {
                 },
                 {
                   icon: <TrendingUp className="w-10 h-10 text-primary" />,
-                  title: "數據可視化",
-                  desc: "即時掌握廣告成效。透過後台查看曝光數、觸及率與轉換數據，優化您的行銷策略。"
+                  title: "預算好規劃",
+                  desc: "即時調整您的廣告預算佈局，優化您的行銷策略。"
                 }
               ].map((item, index) => (
                 <div key={index} className="bg-muted/30 p-8 rounded-2xl border border-border hover:border-primary/50 transition-colors group">
@@ -118,9 +118,7 @@ export default function Advertiser() {
               </div>
               <div className="lg:w-1/2 order-1 lg:order-2 space-y-8">
                 <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-                  全台優質場域，<br/>
-                  盡在指尖
-                </h2>
+                  優質廣告場域，<br/>\n                  盡在指尖選擇                </h2>
                 <p className="text-lg text-muted-foreground">
                   無論是南港展覽館的巨型螢幕，還是商場的數位看板，您都能在 AZIO1AD 找到適合的曝光機會。
                 </p>
@@ -153,9 +151,7 @@ export default function Advertiser() {
             <div className="flex flex-col lg:flex-row items-center gap-16">
               <div className="lg:w-1/2 space-y-6">
                 <h2 className="text-3xl md:text-4xl font-bold">
-                  不只是曝光，<br/>
-                  更是深度互動
-                </h2>
+                  不只是曝光，<br/>\n                  還能深度互動                </h2>
                 <p className="text-lg text-muted-foreground">
                   AZIO1AD 獨家整合票務系統與現場互動模組。
                   將您的廣告植入購票流程、電子票券與現場抽獎活動中，創造真實轉換。
