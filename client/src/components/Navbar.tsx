@@ -110,7 +110,7 @@ export default function Navbar() {
 
         {/* CTA Buttons */}
         <div className="hidden md:flex items-center gap-4">
-          <Button variant="ghost" size="sm">登入</Button>
+          
           <Button size="sm">免費試用</Button>
         </div>
 
@@ -160,7 +160,7 @@ export default function Navbar() {
           ))}
           
           <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-border">
-            <Button variant="outline" className="w-full">登入</Button>
+            
             <Button className="w-full">免費試用</Button>
           </div>
         </div>
