@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-1">
             <Link href="/">
               <a className="flex items-center gap-2 font-bold text-xl tracking-tighter mb-4">
-                <img src="/images/logo-new.png" alt="AZIO1AD" className="h-8 w-auto" />
+                <img src="/images/azio1adlogo.png" alt="AZIO1AD" className="h-8 w-auto" />
               </a>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">

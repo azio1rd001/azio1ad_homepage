@@ -37,7 +37,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/">
           <a className="flex items-center gap-2 font-bold text-xl tracking-tighter">
-            <img src="/images/logo-new.png" alt="AZIO1AD" className="h-8 w-auto" />
+            <img src="/images/azio1adlogo.png" alt="AZIO1AD" className="h-8 w-auto" />
           </a>
         </Link>
 
