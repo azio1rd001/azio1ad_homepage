@@ -3,6 +3,8 @@ import { ArrowRight, Ticket, Monitor, ShoppingBag, Users, Zap, Target } from "lu
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function About() {
   const fadeIn = {
@@ -20,7 +22,9 @@ export default function About() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-hidden">
+    <div className="min-h-screen bg-background text-foreground overflow-hidden flex flex-col">
+      <Navbar />
+      <main className="flex-grow">
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -255,6 +259,8 @@ export default function About() {
           </div>
         </div>
       </section>
+      </main>
+      <Footer />
     </div>
   );
 }
