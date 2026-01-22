@@ -46,8 +46,8 @@ export default function About() {
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
               連結人與場域的數位橋樑
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-light">
-              智林國際股份有限公司 (Linkst International)
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-light" style={{color: '#000233'}}>
+              智林國際股份有限公司
             </p>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               我們致力於透過科技創新，整合線上與線下資源，為企業與消費者創造無縫的數位體驗。
