@@ -147,23 +147,23 @@ export default function Advertiser() {
           </div>
         </section>
 
-        {/* Feature Showcase: Analytics */}
+        {/* Feature Showcase: Ticket & Interaction */}
         <section className="py-24 overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row items-center gap-16">
               <div className="lg:w-1/2 space-y-6">
                 <h2 className="text-3xl md:text-4xl font-bold">
-                  數據驅動，<br/>
-                  讓每一分預算都值得
+                  不只是曝光，<br/>
+                  更是深度互動
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  不再依賴模糊的預估值。AZIO1AD 結合場域人流偵測與票務數據，
-                  為您提供真實、可信的成效報告。
+                  AZIO1AD 獨家整合票務系統與現場互動模組。
+                  將您的廣告植入購票流程、電子票券與現場抽獎活動中，創造真實轉換。
                 </p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
                   {[
-                    "即時曝光監測", "人流熱區分析",
-                    "受眾輪廓洞察", "轉換成效追蹤"
+                    "電子票券廣告植入", "現場掃碼抽獎",
+                    "購票流程加購推廣", "即時互動遊戲"
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-2 p-3 rounded-lg bg-muted/30 border border-border">
                       <CheckCircle2 className="w-5 h-5 text-primary" />
@@ -173,15 +173,15 @@ export default function Advertiser() {
                 </ul>
                 <div className="pt-6">
                   <Button variant="outline" size="lg">
-                    查看報表範例
+                    體驗互動模組
                   </Button>
                 </div>
               </div>
               <div className="lg:w-1/2">
-                <div className="relative rounded-2xl overflow-hidden shadow-xl border border-border">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl border border-border bg-white">
                   <img 
-                    src="/images/advertiser-analytics.png" 
-                    alt="Analytics Dashboard" 
+                    src="/images/advertiser-interaction.png" 
+                    alt="Ticket & Interaction Integration" 
                     className="w-full h-auto hover:scale-105 transition-transform duration-700"
                   />
                 </div>
