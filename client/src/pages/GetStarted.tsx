@@ -54,12 +54,12 @@ export default function GetStarted() {
                 </ul>
               </CardContent>
               <CardFooter className="flex justify-center pb-8">
-                <Link href="/advertiser">
+                <a href="https://app.azio1ad.com/login" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="w-full min-w-[200px] bg-red-500 hover:bg-red-600 text-white group-hover:shadow-lg transition-all">
                     我是廣告主
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
-                </Link>
+                </a>
               </CardFooter>
             </Card>
 
@@ -95,12 +95,12 @@ export default function GetStarted() {
                 </ul>
               </CardContent>
               <CardFooter className="flex justify-center pb-8">
-                <Link href="/media-owner">
+                <a href="https://app.azio1ad.com/admin/login" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="w-full min-w-[200px] bg-[#161616] hover:bg-neutral-800 text-white group-hover:shadow-lg transition-all">
                     我是媒體方
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
-                </Link>
+                </a>
               </CardFooter>
             </Card>
           </div>
