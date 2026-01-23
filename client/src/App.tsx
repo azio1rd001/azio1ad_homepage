@@ -10,6 +10,7 @@ import MediaOwner from "./pages/MediaOwner";
 import Pricing from "./pages/Pricing";
 import About from "./pages/About";
 import Features from "./pages/Features";
+import CaseStudies from "./pages/CaseStudies";
 
 
 function Router() {
@@ -21,6 +22,7 @@ function Router() {
       <Route path={"/pricing"} component={Pricing} />
       <Route path={"/about"} component={About} />
       <Route path={"/features"} component={Features} />
+      <Route path={"/case-studies"} component={CaseStudies} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

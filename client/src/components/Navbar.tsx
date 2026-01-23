@@ -27,7 +27,7 @@ export default function Navbar() {
     { name: "產品功能", href: "/features" },
     // Solutions is handled separately for dropdown
     { name: "定價方案", href: "/pricing" },
-    { name: "客戶案例", href: "/cases" },
+    { name: "客戶案例", href: "/case-studies" },
     { name: "關於我們", href: "/about" },
   ];
 
