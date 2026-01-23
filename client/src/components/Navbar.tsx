@@ -103,7 +103,9 @@ export default function Navbar() {
         {/* CTA Buttons */}
         <div className="hidden md:flex items-center gap-4">
           
-          <Button size="sm">免費試用</Button>
+          <Link href="/get-started">
+            <Button size="sm">免費試用</Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -153,7 +155,9 @@ export default function Navbar() {
           
           <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-border">
             
-            <Button className="w-full">免費試用</Button>
+            <Link href="/get-started">
+              <Button className="w-full">免費試用</Button>
+            </Link>
           </div>
         </div>
       )}
