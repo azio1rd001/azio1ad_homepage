@@ -40,15 +40,15 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4">聯絡我們</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Email: contact@azio1.com</li>
-              <li>Tel: 02-1234-5678</li>
-              <li>台北市南港區經貿二路1號</li>
+              <li>Email: oscar@linkst-tw.com</li>
+              <li>Tel: 02-26271939</li>
+              <li>台北市內湖區洲子街88號1樓</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p>&copy; 2026 AZIO1AD. All rights reserved.</p>
+          <p>&copy; 2025 AZIO1AD. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="/privacy"><a className="hover:text-primary transition-colors">隱私權政策</a></Link>
             <Link href="/terms"><a className="hover:text-primary transition-colors">服務條款</a></Link>
