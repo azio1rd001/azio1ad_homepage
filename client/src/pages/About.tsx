@@ -245,17 +245,17 @@ export default function About() {
             無論您是場域主還是廣告主，AZIO1AD 都能為您創造新的價值。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/media-owner">
+            <a href="https://app.azio1ad.com/admin/login" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 text-lg h-12">
                 我是場域主
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-            </Link>
-            <Link href="/advertiser">
+            </a>
+            <a href="https://app.azio1ad.com/login" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="border-border text-foreground hover:bg-muted px-8 text-lg h-12">
                 我是廣告主
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

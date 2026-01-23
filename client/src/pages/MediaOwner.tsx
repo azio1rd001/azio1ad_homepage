@@ -42,9 +42,11 @@ export default function MediaOwner() {
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <Button size="lg" className="text-base px-8 h-12 bg-orange-500 hover:bg-orange-600 border-none text-white">
-                    成為媒體合作夥伴 <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
+                  <a href="https://app.azio1ad.com/admin/login" target="_blank" rel="noopener noreferrer">
+                    <Button size="lg" className="text-base px-8 h-12 bg-orange-500 hover:bg-orange-600 border-none text-white">
+                      成為媒體合作夥伴 <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                  </a>
                 </div>
               </div>
               
@@ -226,9 +228,11 @@ export default function MediaOwner() {
               加入 AZIO1AD，立即開啟您的場域數位轉型之旅。
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button size="lg" className="text-base px-10 h-14 bg-orange-500 hover:bg-orange-600 border-none text-white font-bold">
-                申請成為媒體夥伴
-              </Button>
+              <a href="https://app.azio1ad.com/admin/login" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="text-base px-10 h-14 bg-orange-500 hover:bg-orange-600 border-none text-white font-bold">
+                  申請成為媒體夥伴
+                </Button>
+              </a>
               <Button variant="outline" size="lg" className="text-base px-10 h-14 border-white/20 text-white hover:bg-white/10">
                 下載合作簡報
               </Button>

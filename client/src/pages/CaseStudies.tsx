@@ -125,12 +125,16 @@ export default function CaseStudies() {
               加入 AZIO1AD 生態系，讓閒置螢幕變身為賺錢的數位資產。
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="text-lg px-8">
-                我是場域主
-              </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                我是廣告主
-              </Button>
+              <a href="https://app.azio1ad.com/admin/login" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" variant="secondary" className="text-lg px-8">
+                  我是場域主
+                </Button>
+              </a>
+              <a href="https://app.azio1ad.com/login" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+                  我是廣告主
+                </Button>
+              </a>
             </div>
           </div>
         </section>
