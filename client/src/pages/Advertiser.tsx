@@ -151,7 +151,7 @@ export default function Advertiser() {
             <div className="flex flex-col lg:flex-row items-center gap-16">
               <div className="lg:w-1/2 space-y-6">
                 <h2 className="text-3xl md:text-4xl font-bold">
-                  不只是曝光，<br/>\n                  還能深度互動                </h2>
+                  不只是曝光，還能深度互動                </h2>
                 <p className="text-lg text-muted-foreground">
                   AZIO1AD 獨家整合票務系統與現場互動模組。
                   將您的廣告植入購票流程、電子票券與現場抽獎活動中，創造真實轉換。
