@@ -53,7 +53,7 @@ export default function Advertiser() {
         <section className="py-24 bg-background">
           <div className="container mx-auto px-4">
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">為什麼選擇 AZIO1AD？</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">為什麼選擇 AZIO1AD？?</h2>
               <p className="text-lg text-muted-foreground">
                 我們打破傳統廣告採購的黑箱作業，為您帶來前所未有的透明與效率。
               </p>
