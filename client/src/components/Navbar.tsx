@@ -75,16 +75,15 @@ export default function Navbar() {
                     <div className="text-xs text-muted-foreground">買廣告，精準投放目標場域</div>
                   </a>
                 </Link>
-                <a 
-                    href="https://app.azio1ad.com/admin/login"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <Link href="/solutions/media-owner">
+                  <a 
                     className="block p-3 rounded-lg hover:bg-muted transition-colors"
                     onClick={() => setIsSolutionsOpen(false)}
                   >
                     <div className="font-bold text-foreground mb-1">我是媒體方</div>
                     <div className="text-xs text-muted-foreground">賣版位，閒置螢幕變現</div>
                   </a>
+                </Link>
               </div>
             )}
           </div>
@@ -135,15 +134,11 @@ export default function Navbar() {
                   我是廣告主 <span className="text-xs text-muted-foreground ml-2">- 買廣告</span>
                 </a>
               </Link>
-              <a 
-                  href="https://app.azio1ad.com/admin/login"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block py-2 text-foreground hover:text-primary" 
-                  onClick={() => setIsMenuOpen(false)}
-                >
+              <Link href="/solutions/media-owner">
+                <a className="block py-2 text-foreground hover:text-primary" onClick={() => setIsMenuOpen(false)}>
                   我是媒體方 <span className="text-xs text-muted-foreground ml-2">- 賣版位</span>
                 </a>
+              </Link>
             </div>
           </div>
 
