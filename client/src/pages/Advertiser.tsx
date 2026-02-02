@@ -110,25 +110,35 @@ export default function Advertiser() {
                         <CheckCircle2 className="w-6 h-6" />
                       </div>
                       <div>
-                        <p className="text-xs text-muted-foreground">投放狀態</p>
-                        <p className="font-bold text-foreground">即時上線中</p>
+                        <p className="text-xs text-muted-foreground">{t('advertiser.marketplace.badge.status')}</p>
+                        <p className="font-bold text-foreground">{t('advertiser.marketplace.badge.online')}</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="lg:w-1/2 order-1 lg:order-2 space-y-8">
-                <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-                  優質廣告場域，<br/>\n                  盡在指尖選擇                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold leading-tight whitespace-pre-line">
+                  {t('advertiser.marketplace.title')}
+                </h2>
                 <p className="text-lg text-muted-foreground">
-                  無論是南港展覽館的巨型螢幕，還是商場的數位看板，您都能在 AZIO1AD 找到適合的曝光機會。
+                  {t('advertiser.marketplace.description')}
                 </p>
                 
                 <div className="space-y-6">
                   {[
-                    { title: "精準篩選", desc: "依據地區、場域類型、人流特徵篩選最佳版位。" },
-                    { title: "彈性排程", desc: "支援單日、多日或特定時段投放，預算運用更靈活。" },
-                    { title: "一站管理", desc: "統一後台管理所有投放活動，素材更換一鍵搞定。" }
+                    { 
+                      title: t('advertiser.marketplace.feature1.title'), 
+                      desc: t('advertiser.marketplace.feature1.desc') 
+                    },
+                    { 
+                      title: t('advertiser.marketplace.feature2.title'), 
+                      desc: t('advertiser.marketplace.feature2.desc') 
+                    },
+                    { 
+                      title: t('advertiser.marketplace.feature3.title'), 
+                      desc: t('advertiser.marketplace.feature3.desc') 
+                    }
                   ].map((item, i) => (
                     <div key={i} className="flex gap-4">
                       <div className="w-8 h-8 rounded-full bg-primary/10 flex-shrink-0 flex items-center justify-center text-primary font-bold">
@@ -152,15 +162,17 @@ export default function Advertiser() {
             <div className="flex flex-col lg:flex-row items-center gap-16">
               <div className="lg:w-1/2 space-y-6">
                 <h2 className="text-3xl md:text-4xl font-bold">
-                  不只是曝光，還能深度互動                </h2>
+                  {t('advertiser.interaction.title')}
+                </h2>
                 <p className="text-lg text-muted-foreground">
-                  AZIO1AD 獨家整合票務系統與現場互動模組。
-                  將您的廣告植入購票流程、電子票券與現場抽獎活動中，創造真實轉換。
+                  {t('advertiser.interaction.description')}
                 </p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
                   {[
-                    "電子票券廣告植入", "現場掃碼抽獎",
-                    "購票流程加購推廣", "即時互動遊戲"
+                    t('advertiser.interaction.list1'),
+                    t('advertiser.interaction.list2'),
+                    t('advertiser.interaction.list3'),
+                    t('advertiser.interaction.list4')
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-2 p-3 rounded-lg bg-muted/30 border border-border">
                       <CheckCircle2 className="w-5 h-5 text-primary" />
@@ -170,7 +182,7 @@ export default function Advertiser() {
                 </ul>
                 <div className="pt-6">
                   <Button variant="outline" size="lg">
-                    體驗互動模組
+                    {t('advertiser.interaction.button')}
                   </Button>
                 </div>
               </div>
@@ -191,13 +203,13 @@ export default function Advertiser() {
         <section className="py-20 bg-primary text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              準備好提升品牌曝光了嗎？
+              {t('advertiser.cta.title')}
             </h2>
             <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10">
-              立即註冊 AZIO1AD 廣告主帳號，首次投放即享專屬優惠。
+              {t('advertiser.cta.description')}
             </p>
             <Button size="lg" variant="secondary" className="text-base px-10 h-14 font-bold shadow-lg">
-              免費註冊廣告主帳號
+              {t('advertiser.cta.button')}
             </Button>
           </div>
         </section>

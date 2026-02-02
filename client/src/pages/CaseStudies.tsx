@@ -71,7 +71,7 @@ export default function CaseStudies() {
                     {t('caseStudies.card1.category')}
                   </div>
                   <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                    {t('caseStudies.card1.title')}：打造全透明的數位廣告市集
+                    {t('caseStudies.card1.title')}{t('caseStudies.nangang.subtitle')}
                   </h2>
                   <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                     {t('caseStudies.card1.description')}
@@ -83,8 +83,8 @@ export default function CaseStudies() {
                         <Monitor className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <h4 className="font-bold text-foreground mb-1">{t('features.card1.desc3')}</h4>
-                        <p className="text-sm text-muted-foreground">{t('features.card4.desc2')}</p>
+                        <h4 className="font-bold text-foreground mb-1">{t('caseStudies.nangang.feature1.title')}</h4>
+                        <p className="text-sm text-muted-foreground">{t('caseStudies.nangang.feature1.desc')}</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -92,8 +92,8 @@ export default function CaseStudies() {
                         <TrendingUp className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <h4 className="font-bold text-foreground mb-1">{t('mediaOwner.revenue.card1.title')}</h4>
-                        <p className="text-sm text-muted-foreground">{t('mediaOwner.revenue.card1.desc')}</p>
+                        <h4 className="font-bold text-foreground mb-1">{t('caseStudies.nangang.feature2.title')}</h4>
+                        <p className="text-sm text-muted-foreground">{t('caseStudies.nangang.feature2.desc')}</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -101,14 +101,14 @@ export default function CaseStudies() {
                         <Users className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <h4 className="font-bold text-foreground mb-1">{t('mediaOwner.benefits.card3.title')}</h4>
-                        <p className="text-sm text-muted-foreground">{t('mediaOwner.benefits.card3.desc')}</p>
+                        <h4 className="font-bold text-foreground mb-1">{t('caseStudies.nangang.feature3.title')}</h4>
+                        <p className="text-sm text-muted-foreground">{t('caseStudies.nangang.feature3.desc')}</p>
                       </div>
                     </div>
                   </div>
 
                   <Button size="lg" className="gap-2">
-                    {t('pricing.cta.button.learnMore')} <ArrowRight className="w-4 h-4" />
+                    {t('caseStudies.nangang.button')} <ArrowRight className="w-4 h-4" />
                   </Button>
                 </motion.div>
               </div>
@@ -123,17 +123,17 @@ export default function CaseStudies() {
               {t('caseStudies.cta.title')}
             </h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              {t('features.cta.description')}
+              {t('caseStudies.cta.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="https://app.azio1ad.com/admin/login" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" variant="secondary" className="text-lg px-8">
-                  {t('mediaOwner.hero.cta')}
+                  {t('caseStudies.cta.primary')}
                 </Button>
               </a>
               <a href="https://app.azio1ad.com/login" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                  {t('advertiser.hero.cta')}
+                  {t('caseStudies.cta.secondary')}
                 </Button>
               </a>
             </div>

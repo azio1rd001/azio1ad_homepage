@@ -50,7 +50,7 @@ export default function About() {
               {t('about.hero.title')}
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-light" style={{color: '#000233'}}>
-              智林國際股份有限公司
+              {t('about.hero.company')}
             </p>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               {t('about.hero.description')}
@@ -70,19 +70,15 @@ export default function About() {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
-                從票務到廣告的演進
+                {t('about.evolution.title')}
               </h2>
-              <h3 className="text-xl text-foreground mb-4">From Ticketing to Advertising</h3>
+              <h3 className="text-xl text-foreground mb-4">{t('about.evolution.subtitle')}</h3>
               <div className="space-y-4 text-muted-foreground">
+                <p dangerouslySetInnerHTML={{ __html: t('about.evolution.p1') }} />
                 <p>
-                  智林國際起步於 <strong>AZIO1 票務系統</strong>，我們深耕於大型活動與場館的票務解決方案，累積了豐富的人流數據與場域運營經驗。
+                  {t('about.evolution.p2')}
                 </p>
-                <p>
-                  在服務過程中，我們發現場域中存在著巨大的「注意力資產」未被有效利用。傳統的廣告看板缺乏數據支持，無法精準觸及目標受眾。
-                </p>
-                <p>
-                  於是，我們將票務系統的人流數據與廣告投放結合，誕生了 <strong>AZIO1AD 廣告系統</strong>。這不僅是一個廣告投放平台，更是一個整合了人流、數據與場域的智慧生態系。
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: t('about.evolution.p3') }} />
               </div>
             </motion.div>
             <motion.div 
@@ -111,9 +107,9 @@ export default function About() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">三大事業體生態系</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('about.ecosystem.title')}</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              AZIO1 以數據為核心，串聯票務、廣告與電商，打造全方位的商業閉環。
+              {t('about.ecosystem.description')}
             </p>
           </motion.div>
 
@@ -130,9 +126,9 @@ export default function About() {
                     <Ticket size={32} />
                   </div>
                   <h3 className="text-2xl font-bold mb-2 text-foreground">AZIO1</h3>
-                  <p className="text-sm text-blue-400 mb-4 font-semibold">票務系統</p>
+                  <p className="text-sm text-blue-400 mb-4 font-semibold">{t('about.ecosystem.azio1.subtitle')}</p>
                   <p className="text-muted-foreground">
-                    專業的票務解決方案，提供購票、驗票、入場管理一站式服務，掌握核心人流數據。
+                    {t('about.ecosystem.azio1.description')}
                   </p>
                 </CardContent>
               </Card>
@@ -150,9 +146,9 @@ export default function About() {
                     <Monitor size={32} />
                   </div>
                   <h3 className="text-2xl font-bold mb-2 text-foreground">AZIO1AD</h3>
-                  <p className="text-sm text-primary mb-4 font-semibold">廣告系統</p>
+                  <p className="text-sm text-primary mb-4 font-semibold">{t('about.ecosystem.azio1ad.subtitle')}</p>
                   <p className="text-muted-foreground">
-                    整合式場域廣告投放與管理 SaaS，將人流轉化為廣告價值，實現精準行銷。
+                    {t('about.ecosystem.azio1ad.description')}
                   </p>
                 </CardContent>
               </Card>
@@ -170,9 +166,9 @@ export default function About() {
                     <ShoppingBag size={32} />
                   </div>
                   <h3 className="text-2xl font-bold mb-2 text-foreground">AZIO1EC</h3>
-                  <p className="text-sm text-green-400 mb-4 font-semibold">電商系統</p>
+                  <p className="text-sm text-green-400 mb-4 font-semibold">{t('about.ecosystem.azio1ec.subtitle')}</p>
                   <p className="text-muted-foreground">
-                    協助 B 端客戶完成線上商務化，提供系統工具與顧問服務，建立自有品牌銷售管道。
+                    {t('about.ecosystem.azio1ec.description')}
                   </p>
                 </CardContent>
               </Card>
@@ -203,7 +199,7 @@ export default function About() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">我們的核心價值</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('about.values.title')}</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -211,27 +207,27 @@ export default function About() {
               <div className="w-12 h-12 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4 text-primary">
                 <Zap size={24} />
               </div>
-              <h3 className="text-xl font-bold mb-2 text-foreground">創新 Innovation</h3>
+              <h3 className="text-xl font-bold mb-2 text-foreground">{t('about.values.innovation.title')}</h3>
               <p className="text-muted-foreground">
-                {t('about.mission.description')}
+                {t('about.values.innovation.description')}
               </p>
             </div>
             <div className="text-center p-6">
               <div className="w-12 h-12 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4 text-primary">
                 <Users size={24} />
               </div>
-              <h3 className="text-xl font-bold mb-2 text-foreground">整合 Integration</h3>
+              <h3 className="text-xl font-bold mb-2 text-foreground">{t('about.values.integration.title')}</h3>
               <p className="text-muted-foreground">
-                {t('about.vision.description')}
+                {t('about.values.integration.description')}
               </p>
             </div>
             <div className="text-center p-6">
               <div className="w-12 h-12 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4 text-primary">
                 <Target size={24} />
               </div>
-              <h3 className="text-xl font-bold mb-2 text-foreground">共贏 Win-Win</h3>
+              <h3 className="text-xl font-bold mb-2 text-foreground">{t('about.values.winwin.title')}</h3>
               <p className="text-muted-foreground">
-                {t('about.team.description')}
+                {t('about.values.winwin.description')}
               </p>
             </div>
           </div>
@@ -242,21 +238,21 @@ export default function About() {
       <section className="py-20 bg-gradient-to-t from-primary/5 to-background border-t border-border">
         <div className="container px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-            {t('caseStudies.cta.title')}
+            {t('about.cta.title')}
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            {t('features.cta.description')}
+            {t('about.cta.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://app.azio1ad.com/admin/login" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 text-lg h-12">
-                {t('mediaOwner.hero.cta')}
+                {t('about.cta.primary')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </a>
             <a href="https://app.azio1ad.com/login" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="border-border text-foreground hover:bg-muted px-8 text-lg h-12">
-                {t('advertiser.hero.cta')}
+                {t('about.cta.secondary')}
               </Button>
             </a>
           </div>
