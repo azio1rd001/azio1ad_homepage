@@ -290,6 +290,24 @@ export const translations: Record<Language, Record<string, string>> = {
     'about.cta.description': '加入 AZIO1AD，立即開啟您的場域數位轉型之旅。',
     'about.cta.primary': '成為媒體合作夥伴',
     'about.cta.secondary': '我是廣告主',
+
+    // Footer
+    'footer.description.1': '台灣首個去經銷化的場域廣告 SaaS 平台。',
+    'footer.description.2': '重新定義廣告版位的銷售與購買方式。',
+    'footer.product.title': '產品功能',
+    'footer.product.screenManagement': '螢幕管理',
+    'footer.product.adMarketplace': '廣告版位出租',
+    'footer.product.analytics': '數據分析',
+    'footer.product.integration': '票務整合',
+    'footer.solutions.title': '解決方案',
+    'footer.solutions.exhibition': '展覽館',
+    'footer.solutions.commercial': '商業空間',
+    'footer.solutions.events': '活動場域',
+    'footer.contact.title': '聯絡我們',
+    'footer.contact.address': '台北市內湖區洲子街88號1樓',
+    'footer.copyright': '© 2025 AZIO1AD. All rights reserved.',
+    'footer.privacy': '隱私權政策',
+    'footer.terms': '服務條款',
   },
   en: {
     // Navbar
@@ -570,6 +588,24 @@ export const translations: Record<Language, Record<string, string>> = {
     'about.cta.description': 'Join AZIO1AD and start your venue digital transformation journey today.',
     'about.cta.primary': 'Become a Media Partner',
     'about.cta.secondary': 'I am an Advertiser',
+
+    // Footer
+    'footer.description.1': 'Taiwan\'s first de-intermediated DOOH SaaS platform.',
+    'footer.description.2': 'Redefining how ad inventory is sold and bought.',
+    'footer.product.title': 'Features',
+    'footer.product.screenManagement': 'Screen Management',
+    'footer.product.adMarketplace': 'Ad Marketplace',
+    'footer.product.analytics': 'Analytics',
+    'footer.product.integration': 'Ticketing Integration',
+    'footer.solutions.title': 'Solutions',
+    'footer.solutions.exhibition': 'Exhibition Halls',
+    'footer.solutions.commercial': 'Commercial Spaces',
+    'footer.solutions.events': 'Event Venues',
+    'footer.contact.title': 'Contact Us',
+    'footer.contact.address': '1F, No. 88, Zhouzi St., Neihu Dist., Taipei City',
+    'footer.copyright': '© 2025 AZIO1AD. All rights reserved.',
+    'footer.privacy': 'Privacy Policy',
+    'footer.terms': 'Terms of Service',
   },
   ja: {
     // Navbar
@@ -850,6 +886,24 @@ export const translations: Record<Language, Record<string, string>> = {
     'about.cta.description': 'AZIO1ADに参加して、今すぐ会場のデジタルトランスフォーメーションの旅を始めましょう。',
     'about.cta.primary': 'メディアパートナーになる',
     'about.cta.secondary': '私は広告主です',
+
+    // Footer
+    'footer.description.1': '台湾初の脱仲介型DOOH SaaSプラットフォーム。',
+    'footer.description.2': '広告枠の販売と購入方法を再定義します。',
+    'footer.product.title': '機能',
+    'footer.product.screenManagement': 'スクリーン管理',
+    'footer.product.adMarketplace': '広告枠マーケットプレイス',
+    'footer.product.analytics': 'データ分析',
+    'footer.product.integration': 'チケット連携',
+    'footer.solutions.title': 'ソリューション',
+    'footer.solutions.exhibition': '展示場',
+    'footer.solutions.commercial': '商業施設',
+    'footer.solutions.events': 'イベント会場',
+    'footer.contact.title': 'お問い合わせ',
+    'footer.contact.address': '台北市内湖区洲子街88号1階',
+    'footer.copyright': '© 2025 AZIO1AD. All rights reserved.',
+    'footer.privacy': 'プライバシーポリシー',
+    'footer.terms': '利用規約',
   }
 };
 
