@@ -44,20 +44,20 @@ export default function Navbar() {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
-          <a className="flex items-center gap-2 font-bold text-xl tracking-tighter">
+          <div className="flex items-center gap-2 font-bold text-xl tracking-tighter cursor-pointer">
             <img src="/images/azio1adlogo.png" alt="AZIO1AD" className="h-8 w-auto" />
-          </a>
+          </div>
         </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           <Link href="/features">
-            <a className={cn(
-              "text-sm font-medium transition-colors hover:text-primary",
+            <div className={cn(
+              "text-sm font-medium transition-colors hover:text-primary cursor-pointer",
               location === "/features" ? "text-primary" : "text-muted-foreground"
             )}>
               {t('nav.features')}
-            </a>
+            </div>
           </Link>
 
           {/* Solutions Dropdown */}
@@ -75,22 +75,22 @@ export default function Navbar() {
             {isSolutionsOpen && (
               <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 bg-background border border-border rounded-xl shadow-lg p-2 animate-in fade-in zoom-in-95 duration-200">
                 <Link href="/solutions/advertiser">
-                  <a 
-                    className="block p-3 rounded-lg hover:bg-muted transition-colors"
+                  <div 
+                    className="block p-3 rounded-lg hover:bg-muted transition-colors cursor-pointer"
                     onClick={() => setIsSolutionsOpen(false)}
                   >
                     <div className="font-bold text-foreground mb-1">{t('nav.advertiser')}</div>
                     <div className="text-xs text-muted-foreground">{t('nav.advertiser.desc')}</div>
-                  </a>
+                  </div>
                 </Link>
                 <Link href="/solutions/media-owner">
-                  <a 
-                    className="block p-3 rounded-lg hover:bg-muted transition-colors"
+                  <div 
+                    className="block p-3 rounded-lg hover:bg-muted transition-colors cursor-pointer"
                     onClick={() => setIsSolutionsOpen(false)}
                   >
                     <div className="font-bold text-foreground mb-1">{t('nav.mediaOwner')}</div>
                     <div className="text-xs text-muted-foreground">{t('nav.mediaOwner.desc')}</div>
-                  </a>
+                  </div>
                 </Link>
               </div>
             )}
@@ -98,12 +98,12 @@ export default function Navbar() {
 
           {navItems.slice(1).map((item) => (
             <Link key={item.href} href={item.href}>
-              <a className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
+              <div className={cn(
+                "text-sm font-medium transition-colors hover:text-primary cursor-pointer",
                 location === item.href ? "text-primary" : "text-muted-foreground"
               )}>
                 {item.name}
-              </a>
+              </div>
             </Link>
           ))}
         </div>
@@ -148,35 +148,35 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden absolute top-16 left-0 right-0 bg-background border-b border-border p-4 flex flex-col gap-4 animate-in slide-in-from-top-5 h-[calc(100vh-4rem)] overflow-y-auto">
           <Link href="/features">
-            <a className="text-base font-medium py-2 block text-foreground hover:text-primary" onClick={() => setIsMenuOpen(false)}>
+            <div className="text-base font-medium py-2 block text-foreground hover:text-primary cursor-pointer" onClick={() => setIsMenuOpen(false)}>
               {t('nav.features')}
-            </a>
+            </div>
           </Link>
           
           <div className="py-2">
             <div className="text-base font-medium text-muted-foreground mb-2 px-2">{t('nav.solutions')}</div>
             <div className="pl-4 border-l-2 border-border ml-2 space-y-2">
               <Link href="/solutions/advertiser">
-                <a className="block py-2 text-foreground hover:text-primary" onClick={() => setIsMenuOpen(false)}>
+                <div className="block py-2 text-foreground hover:text-primary cursor-pointer" onClick={() => setIsMenuOpen(false)}>
                   {t('nav.advertiser')}
-                </a>
+                </div>
               </Link>
               <Link href="/solutions/media-owner">
-                <a className="block py-2 text-foreground hover:text-primary" onClick={() => setIsMenuOpen(false)}>
+                <div className="block py-2 text-foreground hover:text-primary cursor-pointer" onClick={() => setIsMenuOpen(false)}>
                   {t('nav.mediaOwner')}
-                </a>
+                </div>
               </Link>
             </div>
           </div>
 
           {navItems.slice(1).map((item) => (
             <Link key={item.href} href={item.href}>
-              <a 
-                className="text-base font-medium py-2 block text-foreground hover:text-primary"
+              <div 
+                className="text-base font-medium py-2 block text-foreground hover:text-primary cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
-              </a>
+              </div>
             </Link>
           ))}
           
