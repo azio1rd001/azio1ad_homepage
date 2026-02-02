@@ -5,8 +5,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function About() {
+  const { t } = useLanguage();
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
@@ -44,13 +46,13 @@ export default function About() {
             className="max-w-4xl mx-auto"
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-              連結人與場域的數位橋樑
+              {t('about.hero.title')}
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-light" style={{color: '#000233'}}>
-              智林國際股份有限公司
+              {t('about.hero.company')}
             </p>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              我們致力於透過科技創新，整合線上與線下資源，為企業與消費者創造無縫的數位體驗。
+              {t('about.hero.description')}
             </p>
           </motion.div>
         </div>
@@ -67,19 +69,13 @@ export default function About() {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
-                從票務到廣告的演進
+                {t('about.evolution.title')}
               </h2>
-              <h3 className="text-xl text-foreground mb-4">From Ticketing to Advertising</h3>
+              <h3 className="text-xl text-foreground mb-4">{t('about.evolution.subtitle')}</h3>
               <div className="space-y-4 text-muted-foreground">
-                <p>
-                  智林國際起步於 <strong>AZIO1 票務系統</strong>，我們深耕於大型活動與場館的票務解決方案，累積了豐富的人流數據與場域運營經驗。
-                </p>
-                <p>
-                  在服務過程中，我們發現場域中存在著巨大的「注意力資產」未被有效利用。傳統的廣告看板缺乏數據支持，無法精準觸及目標受眾。
-                </p>
-                <p>
-                  於是，我們將票務系統的人流數據與廣告投放結合，誕生了 <strong>AZIO1AD 廣告系統</strong>。這不僅是一個廣告投放平台，更是一個整合了人流、數據與場域的智慧生態系。
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: t('about.evolution.p1') }} />
+                <p dangerouslySetInnerHTML={{ __html: t('about.evolution.p2') }} />
+                <p dangerouslySetInnerHTML={{ __html: t('about.evolution.p3') }} />
               </div>
             </motion.div>
             <motion.div 
@@ -108,9 +104,9 @@ export default function About() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">三大事業體生態系</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('about.pillars.title')}</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              AZIO1 以數據為核心，串聯票務、廣告與電商，打造全方位的商業閉環。
+              {t('about.pillars.description')}
             </p>
           </motion.div>
 
@@ -127,9 +123,9 @@ export default function About() {
                     <Ticket size={32} />
                   </div>
                   <h3 className="text-2xl font-bold mb-2 text-foreground">AZIO1</h3>
-                  <p className="text-sm text-blue-400 mb-4 font-semibold">票務系統</p>
+                  <p className="text-sm text-blue-400 mb-4 font-semibold">{t('about.pillars.card1.subtitle')}</p>
                   <p className="text-muted-foreground">
-                    專業的票務解決方案，提供購票、驗票、入場管理一站式服務，掌握核心人流數據。
+                    {t('about.pillars.card1.desc')}
                   </p>
                 </CardContent>
               </Card>
@@ -147,9 +143,9 @@ export default function About() {
                     <Monitor size={32} />
                   </div>
                   <h3 className="text-2xl font-bold mb-2 text-foreground">AZIO1AD</h3>
-                  <p className="text-sm text-primary mb-4 font-semibold">廣告系統</p>
+                  <p className="text-sm text-primary mb-4 font-semibold">{t('about.pillars.card2.subtitle')}</p>
                   <p className="text-muted-foreground">
-                    整合式場域廣告投放與管理 SaaS，將人流轉化為廣告價值，實現精準行銷。
+                    {t('about.pillars.card2.desc')}
                   </p>
                 </CardContent>
               </Card>
@@ -167,9 +163,9 @@ export default function About() {
                     <ShoppingBag size={32} />
                   </div>
                   <h3 className="text-2xl font-bold mb-2 text-foreground">AZIO1EC</h3>
-                  <p className="text-sm text-green-400 mb-4 font-semibold">電商系統</p>
+                  <p className="text-sm text-green-400 mb-4 font-semibold">{t('about.pillars.card3.subtitle')}</p>
                   <p className="text-muted-foreground">
-                    協助 B 端客戶完成線上商務化，提供系統工具與顧問服務，建立自有品牌銷售管道。
+                    {t('about.pillars.card3.desc')}
                   </p>
                 </CardContent>
               </Card>
@@ -200,7 +196,7 @@ export default function About() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">我們的核心價值</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('about.values.title')}</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -208,27 +204,27 @@ export default function About() {
               <div className="w-12 h-12 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4 text-primary">
                 <Zap size={24} />
               </div>
-              <h3 className="text-xl font-bold mb-2 text-foreground">創新 Innovation</h3>
+              <h3 className="text-xl font-bold mb-2 text-foreground">{t('about.values.card1.title')}</h3>
               <p className="text-muted-foreground">
-                不斷突破技術邊界，重新定義傳統商業模式。
+                {t('about.values.card1.desc')}
               </p>
             </div>
             <div className="text-center p-6">
               <div className="w-12 h-12 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4 text-primary">
                 <Users size={24} />
               </div>
-              <h3 className="text-xl font-bold mb-2 text-foreground">整合 Integration</h3>
+              <h3 className="text-xl font-bold mb-2 text-foreground">{t('about.values.card2.title')}</h3>
               <p className="text-muted-foreground">
-                串聯線上數據與線下場域，打造無縫體驗。
+                {t('about.values.card2.desc')}
               </p>
             </div>
             <div className="text-center p-6">
               <div className="w-12 h-12 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4 text-primary">
                 <Target size={24} />
               </div>
-              <h3 className="text-xl font-bold mb-2 text-foreground">共贏 Win-Win</h3>
+              <h3 className="text-xl font-bold mb-2 text-foreground">{t('about.values.card3.title')}</h3>
               <p className="text-muted-foreground">
-                為場域主、廣告主與消費者創造三方共贏的價值。
+                {t('about.values.card3.desc')}
               </p>
             </div>
           </div>
@@ -239,21 +235,21 @@ export default function About() {
       <section className="py-20 bg-gradient-to-t from-primary/5 to-background border-t border-border">
         <div className="container px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-            準備好加入我們的生態系了嗎？
+            {t('about.cta.title')}
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            無論您是場域主還是廣告主，AZIO1AD 都能為您創造新的價值。
+            {t('about.cta.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://app.azio1ad.com/admin/login" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 text-lg h-12">
-                我是場域主
+                {t('about.cta.button.mediaOwner')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </a>
             <a href="https://app.azio1ad.com/login" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="border-border text-foreground hover:bg-muted px-8 text-lg h-12">
-                我是廣告主
+                {t('about.cta.button.advertiser')}
               </Button>
             </a>
           </div>

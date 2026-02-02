@@ -3,6 +3,7 @@ import { Check, HelpCircle, X } from "lucide-react";
 import { Link } from "wouter";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { useLanguage } from "@/contexts/LanguageContext";
 import {
   Tooltip,
   TooltipContent,
@@ -11,77 +12,79 @@ import {
 } from "@/components/ui/tooltip";
 
 export default function Pricing() {
+  const { t } = useLanguage();
+
   const plans = [
     {
-      name: "體驗版",
-      description: "適合個人測試或小型場域體驗系統功能",
+      name: t('pricing.plan.trial.name'),
+      description: t('pricing.plan.trial.desc'),
       price: "0",
-      period: "/ 月",
+      period: t('pricing.period.month'),
       features: [
-        { name: "1 組播放連結", included: true },
-        { name: "基礎雲端排程", included: true },
-        { name: "標準畫質輸出", included: true },
-        { name: "畫面帶有浮水印", included: true, highlight: "text-muted-foreground" },
-        { name: "廣告版位上架權限", included: false },
-        { name: "互動模組", included: false },
-        { name: "API 串接", included: false },
+        { name: t('pricing.feature.1link'), included: true },
+        { name: t('pricing.feature.basicSchedule'), included: true },
+        { name: t('pricing.feature.sd'), included: true },
+        { name: t('pricing.feature.watermark'), included: true, highlight: "text-muted-foreground" },
+        { name: t('pricing.feature.adListing'), included: false },
+        { name: t('pricing.feature.interaction'), included: false },
+        { name: t('pricing.feature.api'), included: false },
       ],
-      cta: "免費開始",
+      cta: t('pricing.cta.start'),
       variant: "outline" as const,
     },
     {
-      name: "商務版",
-      description: "適合中小型場域，立即開啟廣告變現",
+      name: t('pricing.plan.business.name'),
+      description: t('pricing.plan.business.desc'),
       price: "1,200",
-      period: "/ 月",
+      period: t('pricing.period.month'),
       popular: true,
       features: [
-        { name: "5 組播放連結", included: true },
-        { name: "進階雲端排程", included: true },
-        { name: "高清畫質輸出", included: true },
-        { name: "去除官方浮水印", included: true },
-        { name: "廣告版位上架權限", included: true, highlight: "text-primary font-bold" },
-        { name: "基礎數據報表", included: true },
-        { name: "API 串接", included: false },
+        { name: t('pricing.feature.5links'), included: true },
+        { name: t('pricing.feature.advancedSchedule'), included: true },
+        { name: t('pricing.feature.hd'), included: true },
+        { name: t('pricing.feature.noWatermark'), included: true },
+        { name: t('pricing.feature.adListing'), included: true, highlight: "text-primary font-bold" },
+        { name: t('pricing.feature.basicReport'), included: true },
+        { name: t('pricing.feature.api'), included: false },
       ],
-      cta: "立即訂閱",
+      cta: t('pricing.cta.subscribe'),
       variant: "default" as const,
     },
     {
-      name: "旗艦版",
-      description: "適合大型展館與連鎖品牌，完整生態系整合",
-      price: "洽詢",
+      name: t('pricing.plan.flagship.name'),
+      description: t('pricing.plan.flagship.desc'),
+      price: t('pricing.price.contact'),
       period: "",
       features: [
-        { name: "無限組播放連結", included: true },
-        { name: "多層級權限管理", included: true },
-        { name: "4K 超高清輸出", included: true },
-        { name: "去除官方浮水印", included: true },
-        { name: "廣告版位優先曝光", included: true },
-        { name: "互動模組 (抽獎/遊戲)", included: true, highlight: "text-primary font-bold" },
-        { name: "API 串接 (票務/POS)", included: true },
+        { name: t('pricing.feature.unlimitedLinks'), included: true },
+        { name: t('pricing.feature.multiLevel'), included: true },
+        { name: t('pricing.feature.4k'), included: true },
+        { name: t('pricing.feature.noWatermark'), included: true },
+        { name: t('pricing.feature.priority'), included: true },
+        { name: t('pricing.feature.interaction'), included: true, highlight: "text-primary font-bold" },
+        { name: t('pricing.feature.apiFull'), included: true },
       ],
-      cta: "聯絡我們",
+      cta: t('pricing.cta.contact'),
       variant: "outline" as const,
     },
   ];
 
   const faqs = [
     {
-      q: "什麼是「播放連結」？",
-      a: "播放連結是 AZIO1AD 系統產生的專屬網址。您只需將此網址輸入到任何連網螢幕（如智慧電視、平板或數位看板）的瀏覽器中，即可開始播放您設定的廣告內容，無需安裝額外硬體。"
+      q: t('pricing.faq.q1'),
+      a: t('pricing.faq.a1')
     },
     {
-      q: "體驗版有使用期限嗎？",
-      a: "體驗版目前沒有設定硬性的使用期限，您可以盡情測試系統的穩定性與操作介面。但請注意，體驗版輸出的畫面會帶有 AZIO1AD 的浮水印，且無法使用廣告變現功能。"
+      q: t('pricing.faq.q2'),
+      a: t('pricing.faq.a2')
     },
     {
-      q: "如何開始透過廣告市集獲利？",
-      a: "訂閱「商務版」或「旗艦版」後，您可以在後台設定您的螢幕版位資訊（如位置、人流、尺寸）。審核通過後，您的版位就會上架到 AZIO1AD 廣告市集，供廣告主選購。一旦有廣告主下單，您即可獲得分潤收益。"
+      q: t('pricing.faq.q3'),
+      a: t('pricing.faq.a3')
     },
     {
-      q: "我可以隨時升級或取消訂閱嗎？",
-      a: "是的，您可以隨時在後台升級您的方案，新功能將即時生效。若您決定取消訂閱，服務將持續至當期計費週期結束為止。"
+      q: t('pricing.faq.q4'),
+      a: t('pricing.faq.a4')
     },
   ];
 
@@ -93,12 +96,11 @@ export default function Pricing() {
         {/* Header */}
         <div className="container mx-auto px-4 text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
-            選擇適合您的方案，<br />
-            <span className="text-primary">開啟場域變現之旅</span>
+            {t('pricing.header.title.1')}<br />
+            <span className="text-primary">{t('pricing.header.title.2')}</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            無論您是單一店面還是大型展館，AZIO1AD 都有對應的解決方案。<br/>
-            從免費體驗到完整生態系整合，助您最大化螢幕價值。
+            {t('pricing.header.description')}
           </p>
         </div>
 
@@ -116,7 +118,7 @@ export default function Pricing() {
               >
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium">
-                    最受歡迎
+                    {t('pricing.badge.popular')}
                   </div>
                 )}
                 
@@ -159,7 +161,7 @@ export default function Pricing() {
 
         {/* FAQ Section */}
         <div className="container mx-auto px-4 max-w-3xl">
-          <h2 className="text-3xl font-bold text-center mb-12">常見問題</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">{t('pricing.faq.title')}</h2>
           <div className="space-y-8">
             {faqs.map((faq, index) => (
               <div key={index} className="border-b border-border pb-8 last:border-0">
@@ -178,14 +180,14 @@ export default function Pricing() {
         {/* CTA */}
         <div className="container mx-auto px-4 mt-24">
           <div className="bg-muted/30 rounded-3xl p-12 text-center border border-border">
-            <h2 className="text-3xl font-bold mb-6">還不確定哪個方案適合您？</h2>
+            <h2 className="text-3xl font-bold mb-6">{t('pricing.cta.title')}</h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              我們的專業顧問團隊隨時準備為您服務。告訴我們您的場域規模與需求，我們將為您量身打造最合適的導入計畫。
+              {t('pricing.cta.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg">預約專人諮詢</Button>
+              <Button size="lg">{t('pricing.cta.button.consult')}</Button>
               <Link href="/solutions/media-owner">
-                <Button variant="outline" size="lg">了解更多媒體方優勢</Button>
+                <Button variant="outline" size="lg">{t('pricing.cta.button.learnMore')}</Button>
               </Link>
             </div>
           </div>
