@@ -3,11 +3,8 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Store, MonitorPlay } from "lucide-react";
-import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function GetStarted() {
-  const { t } = useLanguage();
-
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
@@ -16,10 +13,10 @@ export default function GetStarted() {
         <div className="max-w-5xl w-full space-y-12">
           <div className="text-center space-y-4">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
-              {t('getStarted.title')}
+              準備好開始了嗎？
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              {t('getStarted.subtitle')}
+              請選擇您的身份，立即體驗 AZIO1AD 帶來的數位廣告變革。
             </p>
           </div>
 
@@ -37,33 +34,33 @@ export default function GetStarted() {
                   <div className="mx-auto w-16 h-16 rounded-2xl bg-red-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Store className="w-8 h-8 text-red-500" />
                   </div>
-                  <CardTitle className="text-2xl font-bold">{t('getStarted.advertiser.title')}</CardTitle>
+                  <CardTitle className="text-2xl font-bold">我是廣告主</CardTitle>
                   <CardDescription className="text-lg font-medium text-red-500">
                     Advertiser
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="text-center space-y-4 pb-8">
                   <p className="text-muted-foreground">
-                    {t('getStarted.advertiser.desc')}
+                    我想購買廣告版位，推廣我的品牌或商品。
                   </p>
                   <ul className="text-sm text-left space-y-2 max-w-[240px] mx-auto text-muted-foreground">
                     <li className="flex items-center">
                       <span className="w-1.5 h-1.5 rounded-full bg-red-500 mr-2" />
-                      {t('getStarted.advertiser.feature1')}
+                      瀏覽全台優質版位
                     </li>
                     <li className="flex items-center">
                       <span className="w-1.5 h-1.5 rounded-full bg-red-500 mr-2" />
-                      {t('getStarted.advertiser.feature2')}
+                      價格透明，線上下單
                     </li>
                     <li className="flex items-center">
                       <span className="w-1.5 h-1.5 rounded-full bg-red-500 mr-2" />
-                      {t('getStarted.advertiser.feature3')}
+                      即刻投放，成效追蹤
                     </li>
                   </ul>
                 </CardContent>
                 <CardFooter className="flex justify-center pb-8">
                   <Button size="lg" className="w-full min-w-[200px] bg-red-500 hover:bg-red-600 text-white group-hover:shadow-lg transition-all pointer-events-none">
-                    {t('getStarted.advertiser.button')}
+                    我是廣告主
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </CardFooter>
@@ -83,33 +80,33 @@ export default function GetStarted() {
                   <div className="mx-auto w-16 h-16 rounded-2xl bg-neutral-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                     <MonitorPlay className="w-8 h-8 text-[#161616]" />
                   </div>
-                  <CardTitle className="text-2xl font-bold">{t('getStarted.mediaOwner.title')}</CardTitle>
+                  <CardTitle className="text-2xl font-bold">我是媒體方</CardTitle>
                   <CardDescription className="text-lg font-medium text-[#161616]">
                     Media Owner
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="text-center space-y-4 pb-8">
                   <p className="text-muted-foreground">
-                    {t('getStarted.mediaOwner.desc')}
+                    我想上架廣告螢幕，將流量變現創造收益。
                   </p>
                   <ul className="text-sm text-left space-y-2 max-w-[240px] mx-auto text-muted-foreground">
                     <li className="flex items-center">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#161616] mr-2" />
-                      {t('getStarted.mediaOwner.feature1')}
+                      輕鬆管理多場域螢幕
                     </li>
                     <li className="flex items-center">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#161616] mr-2" />
-                      {t('getStarted.mediaOwner.feature2')}
+                      自訂版位與銷售價格
                     </li>
                     <li className="flex items-center">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#161616] mr-2" />
-                      {t('getStarted.mediaOwner.feature3')}
+                      自動化排程與收益報表
                     </li>
                   </ul>
                 </CardContent>
                 <CardFooter className="flex justify-center pb-8">
                   <Button size="lg" className="w-full min-w-[200px] bg-[#161616] hover:bg-neutral-800 text-white group-hover:shadow-lg transition-all pointer-events-none">
-                    {t('getStarted.mediaOwner.button')}
+                    我是媒體方
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </CardFooter>

@@ -3,11 +3,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MapPin, Monitor, TrendingUp, Users } from "lucide-react";
-import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function CaseStudies() {
-  const { t } = useLanguage();
-
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Navbar />
@@ -23,10 +20,10 @@ export default function CaseStudies() {
                 transition={{ duration: 0.5 }}
               >
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-                  {t('caseStudies.hero.title')}
+                  客戶案例
                 </h1>
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-light">
-                  {t('caseStudies.hero.description')}
+                  看看領先的場域主如何透過 AZIO1AD 創造價值
                 </p>
               </motion.div>
             </div>
@@ -54,9 +51,9 @@ export default function CaseStudies() {
                   <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6">
                     <div className="flex items-center gap-2 text-white mb-2">
                       <MapPin className="w-5 h-5 text-primary" />
-                      <span className="font-bold text-lg">{t('caseStudies.nangang.location')}</span>
+                      <span className="font-bold text-lg">台北南港展覽館</span>
                     </div>
-                    <p className="text-white/80 text-sm">{t('caseStudies.nangang.badge')}</p>
+                    <p className="text-white/80 text-sm">全台最大展覽場域，數位轉型典範</p>
                   </div>
                 </motion.div>
 
@@ -68,13 +65,15 @@ export default function CaseStudies() {
                   transition={{ duration: 0.5, delay: 0.2 }}
                 >
                   <div className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-6">
-                    {t('caseStudies.nangang.solution')}
+                    展覽場館解決方案
                   </div>
                   <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                    {t('caseStudies.nangang.title')}
+                    南港展覽館：打造全透明的數位廣告市集
                   </h2>
                   <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                    {t('caseStudies.nangang.description')}
+                    南港展覽館使用 AZIO1AD，除了可以同時管理多部廣告螢幕，也同時可以用最簡單的方式進行廣告販售。
+                    周邊餐廳、參展廠商、沒來參展但也想曝光產品的廠商，只要註冊帳號後就可完成線上廣告版位購買，
+                    隨時掌握廣告空檔，價格透明方便行銷預算管理。
                   </p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
@@ -83,8 +82,8 @@ export default function CaseStudies() {
                         <Monitor className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <h4 className="font-bold text-foreground mb-1">{t('caseStudies.nangang.feature1.title')}</h4>
-                        <p className="text-sm text-muted-foreground">{t('caseStudies.nangang.feature1.desc')}</p>
+                        <h4 className="font-bold text-foreground mb-1">多螢幕集中管理</h4>
+                        <p className="text-sm text-muted-foreground">統一後台管理全館數位看板，即時更新內容</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -92,8 +91,8 @@ export default function CaseStudies() {
                         <TrendingUp className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <h4 className="font-bold text-foreground mb-1">{t('caseStudies.nangang.feature2.title')}</h4>
-                        <p className="text-sm text-muted-foreground">{t('caseStudies.nangang.feature2.desc')}</p>
+                        <h4 className="font-bold text-foreground mb-1">廣告收益最大化</h4>
+                        <p className="text-sm text-muted-foreground">閒置時段自動轉為可販售版位，創造額外營收</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -101,14 +100,14 @@ export default function CaseStudies() {
                         <Users className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <h4 className="font-bold text-foreground mb-1">{t('caseStudies.nangang.feature3.title')}</h4>
-                        <p className="text-sm text-muted-foreground">{t('caseStudies.nangang.feature3.desc')}</p>
+                        <h4 className="font-bold text-foreground mb-1">自助式廣告投放</h4>
+                        <p className="text-sm text-muted-foreground">廣告主自行選位、下單、上傳，大幅降低人力成本</p>
                       </div>
                     </div>
                   </div>
 
                   <Button size="lg" className="gap-2">
-                    {t('caseStudies.nangang.cta')} <ArrowRight className="w-4 h-4" />
+                    了解更多場域方案 <ArrowRight className="w-4 h-4" />
                   </Button>
                 </motion.div>
               </div>
@@ -120,20 +119,20 @@ export default function CaseStudies() {
         <section className="py-20 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              {t('caseStudies.cta.title')}
+              您的場域也想創造額外收益嗎？
             </h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              {t('caseStudies.cta.description')}
+              加入 AZIO1AD 生態系，讓閒置螢幕變身為賺錢的數位資產。
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="https://app.azio1ad.com/admin/login" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" variant="secondary" className="text-lg px-8">
-                  {t('caseStudies.cta.button.mediaOwner')}
+                  我是場域主
                 </Button>
               </a>
               <a href="https://app.azio1ad.com/login" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                  {t('caseStudies.cta.button.advertiser')}
+                  我是廣告主
                 </Button>
               </a>
             </div>

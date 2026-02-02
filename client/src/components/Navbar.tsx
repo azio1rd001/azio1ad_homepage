@@ -1,22 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
-import { Menu, X, ChevronDown, Globe } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
-import { useLanguage } from "@/contexts/LanguageContext";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 export default function Navbar() {
   const [location] = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
   const solutionsRef = useRef<HTMLDivElement>(null);
-  const { language, setLanguage, t } = useLanguage();
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -32,11 +24,11 @@ export default function Navbar() {
   }, []);
 
   const navItems = [
-    { name: t('nav.features'), href: "/features" },
+    { name: "產品功能", href: "/features" },
     // Solutions is handled separately for dropdown
-    { name: t('nav.pricing'), href: "/pricing" },
-    { name: t('nav.caseStudies'), href: "/case-studies" },
-    { name: t('nav.about'), href: "/about" },
+    { name: "定價方案", href: "/pricing" },
+    { name: "客戶案例", href: "/case-studies" },
+    { name: "關於我們", href: "/about" },
   ];
 
   return (
@@ -44,20 +36,20 @@ export default function Navbar() {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
-          <div className="flex items-center gap-2 font-bold text-xl tracking-tighter cursor-pointer">
+          <a className="flex items-center gap-2 font-bold text-xl tracking-tighter">
             <img src="/images/azio1adlogo.png" alt="AZIO1AD" className="h-8 w-auto" />
-          </div>
+          </a>
         </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           <Link href="/features">
-            <div className={cn(
-              "text-sm font-medium transition-colors hover:text-primary cursor-pointer",
+            <a className={cn(
+              "text-sm font-medium transition-colors hover:text-primary",
               location === "/features" ? "text-primary" : "text-muted-foreground"
             )}>
-              {t('nav.features')}
-            </div>
+              產品功能
+            </a>
           </Link>
 
           {/* Solutions Dropdown */}
@@ -69,28 +61,28 @@ export default function Navbar() {
               )}
               onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
             >
-              {t('nav.solutions')} <ChevronDown className={cn("w-4 h-4 transition-transform", isSolutionsOpen ? "rotate-180" : "")} />
+              解決方案 <ChevronDown className={cn("w-4 h-4 transition-transform", isSolutionsOpen ? "rotate-180" : "")} />
             </button>
             
             {isSolutionsOpen && (
               <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 bg-background border border-border rounded-xl shadow-lg p-2 animate-in fade-in zoom-in-95 duration-200">
                 <Link href="/solutions/advertiser">
-                  <div 
-                    className="block p-3 rounded-lg hover:bg-muted transition-colors cursor-pointer"
+                  <a 
+                    className="block p-3 rounded-lg hover:bg-muted transition-colors"
                     onClick={() => setIsSolutionsOpen(false)}
                   >
-                    <div className="font-bold text-foreground mb-1">{t('nav.advertiser')}</div>
-                    <div className="text-xs text-muted-foreground">{t('nav.advertiser.desc')}</div>
-                  </div>
+                    <div className="font-bold text-foreground mb-1">我是廣告主</div>
+                    <div className="text-xs text-muted-foreground">買廣告，精準投放目標場域</div>
+                  </a>
                 </Link>
                 <Link href="/solutions/media-owner">
-                  <div 
-                    className="block p-3 rounded-lg hover:bg-muted transition-colors cursor-pointer"
+                  <a 
+                    className="block p-3 rounded-lg hover:bg-muted transition-colors"
                     onClick={() => setIsSolutionsOpen(false)}
                   >
-                    <div className="font-bold text-foreground mb-1">{t('nav.mediaOwner')}</div>
-                    <div className="text-xs text-muted-foreground">{t('nav.mediaOwner.desc')}</div>
-                  </div>
+                    <div className="font-bold text-foreground mb-1">我是媒體方</div>
+                    <div className="text-xs text-muted-foreground">賣版位，閒置螢幕變現</div>
+                  </a>
                 </Link>
               </div>
             )}
@@ -98,40 +90,21 @@ export default function Navbar() {
 
           {navItems.slice(1).map((item) => (
             <Link key={item.href} href={item.href}>
-              <div className={cn(
-                "text-sm font-medium transition-colors hover:text-primary cursor-pointer",
+              <a className={cn(
+                "text-sm font-medium transition-colors hover:text-primary",
                 location === item.href ? "text-primary" : "text-muted-foreground"
               )}>
                 {item.name}
-              </div>
+              </a>
             </Link>
           ))}
         </div>
 
         {/* CTA Buttons */}
         <div className="hidden md:flex items-center gap-4">
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon" className="w-9 px-0">
-                <Globe className="h-4 w-4" />
-                <span className="sr-only">Switch Language</span>
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              <DropdownMenuItem onClick={() => setLanguage('zh')}>
-                繁體中文
-              </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setLanguage('en')}>
-                English
-              </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setLanguage('ja')}>
-                日本語
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
           
           <Link href="/get-started">
-            <Button size="sm">{t('nav.freeTrial')}</Button>
+            <Button size="sm">免費試用</Button>
           </Link>
         </div>
 
@@ -148,47 +121,42 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden absolute top-16 left-0 right-0 bg-background border-b border-border p-4 flex flex-col gap-4 animate-in slide-in-from-top-5 h-[calc(100vh-4rem)] overflow-y-auto">
           <Link href="/features">
-            <div className="text-base font-medium py-2 block text-foreground hover:text-primary cursor-pointer" onClick={() => setIsMenuOpen(false)}>
-              {t('nav.features')}
-            </div>
+            <a className="text-base font-medium py-2 block text-foreground hover:text-primary" onClick={() => setIsMenuOpen(false)}>
+              產品功能
+            </a>
           </Link>
           
           <div className="py-2">
-            <div className="text-base font-medium text-muted-foreground mb-2 px-2">{t('nav.solutions')}</div>
+            <div className="text-base font-medium text-muted-foreground mb-2 px-2">解決方案</div>
             <div className="pl-4 border-l-2 border-border ml-2 space-y-2">
               <Link href="/solutions/advertiser">
-                <div className="block py-2 text-foreground hover:text-primary cursor-pointer" onClick={() => setIsMenuOpen(false)}>
-                  {t('nav.advertiser')}
-                </div>
+                <a className="block py-2 text-foreground hover:text-primary" onClick={() => setIsMenuOpen(false)}>
+                  我是廣告主 <span className="text-xs text-muted-foreground ml-2">- 買廣告</span>
+                </a>
               </Link>
               <Link href="/solutions/media-owner">
-                <div className="block py-2 text-foreground hover:text-primary cursor-pointer" onClick={() => setIsMenuOpen(false)}>
-                  {t('nav.mediaOwner')}
-                </div>
+                <a className="block py-2 text-foreground hover:text-primary" onClick={() => setIsMenuOpen(false)}>
+                  我是媒體方 <span className="text-xs text-muted-foreground ml-2">- 賣版位</span>
+                </a>
               </Link>
             </div>
           </div>
 
           {navItems.slice(1).map((item) => (
             <Link key={item.href} href={item.href}>
-              <div 
-                className="text-base font-medium py-2 block text-foreground hover:text-primary cursor-pointer"
+              <a 
+                className="text-base font-medium py-2 block text-foreground hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
-              </div>
+              </a>
             </Link>
           ))}
           
           <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-border">
             
-            <div className="flex gap-2 justify-center py-2">
-              <Button variant={language === 'zh' ? 'default' : 'outline'} size="sm" onClick={() => setLanguage('zh')}>中文</Button>
-              <Button variant={language === 'en' ? 'default' : 'outline'} size="sm" onClick={() => setLanguage('en')}>EN</Button>
-              <Button variant={language === 'ja' ? 'default' : 'outline'} size="sm" onClick={() => setLanguage('ja')}>JP</Button>
-            </div>
             <Link href="/get-started">
-              <Button className="w-full">{t('nav.freeTrial')}</Button>
+              <Button className="w-full">免費試用</Button>
             </Link>
           </div>
         </div>
