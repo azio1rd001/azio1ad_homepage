@@ -291,6 +291,24 @@ export const translations: Record<Language, Record<string, string>> = {
     'about.cta.primary': '成為媒體合作夥伴',
     'about.cta.secondary': '我是廣告主',
 
+    // Get Started
+    'getStarted.title': '準備好開始了嗎？',
+    'getStarted.subtitle': '請選擇您的身份，立即體驗 AZIO1AD 帶來的數位廣告變革。',
+    'getStarted.advertiser.title': '我是廣告主',
+    'getStarted.advertiser.subtitle': 'Advertiser',
+    'getStarted.advertiser.description': '我想購買廣告版位，推廣我的品牌或商品。',
+    'getStarted.advertiser.feature1': '瀏覽全台優質版位',
+    'getStarted.advertiser.feature2': '價格透明，線上下單',
+    'getStarted.advertiser.feature3': '即刻投放，成效追蹤',
+    'getStarted.advertiser.button': '我是廣告主',
+    'getStarted.mediaOwner.title': '我是媒體方',
+    'getStarted.mediaOwner.subtitle': 'Media Owner',
+    'getStarted.mediaOwner.description': '我想上架廣告螢幕，將流量變現創造收益。',
+    'getStarted.mediaOwner.feature1': '輕鬆管理多場域螢幕',
+    'getStarted.mediaOwner.feature2': '自訂版位與銷售價格',
+    'getStarted.mediaOwner.feature3': '自動化排程與收益報表',
+    'getStarted.mediaOwner.button': '我是媒體方',
+
     // Footer
     'footer.description.1': '台灣首個去經銷化的場域廣告 SaaS 平台。',
     'footer.description.2': '重新定義廣告版位的銷售與購買方式。',
@@ -589,6 +607,24 @@ export const translations: Record<Language, Record<string, string>> = {
     'about.cta.primary': 'Become a Media Partner',
     'about.cta.secondary': 'I am an Advertiser',
 
+    // Get Started
+    'getStarted.title': 'Ready to Get Started?',
+    'getStarted.subtitle': 'Choose your role and experience the digital advertising revolution with AZIO1AD.',
+    'getStarted.advertiser.title': 'I am an Advertiser',
+    'getStarted.advertiser.subtitle': 'Advertiser',
+    'getStarted.advertiser.description': 'I want to buy ad space to promote my brand or products.',
+    'getStarted.advertiser.feature1': 'Browse premium venues across Taiwan',
+    'getStarted.advertiser.feature2': 'Transparent pricing, online ordering',
+    'getStarted.advertiser.feature3': 'Instant delivery, performance tracking',
+    'getStarted.advertiser.button': 'I am an Advertiser',
+    'getStarted.mediaOwner.title': 'I am a Media Owner',
+    'getStarted.mediaOwner.subtitle': 'Media Owner',
+    'getStarted.mediaOwner.description': 'I want to list screens and monetize traffic.',
+    'getStarted.mediaOwner.feature1': 'Easily manage multi-venue screens',
+    'getStarted.mediaOwner.feature2': 'Customize inventory and pricing',
+    'getStarted.mediaOwner.feature3': 'Automated scheduling and revenue reports',
+    'getStarted.mediaOwner.button': 'I am a Media Owner',
+
     // Footer
     'footer.description.1': 'Taiwan\'s first de-intermediated DOOH SaaS platform.',
     'footer.description.2': 'Redefining how ad inventory is sold and bought.',
@@ -886,6 +922,24 @@ export const translations: Record<Language, Record<string, string>> = {
     'about.cta.description': 'AZIO1ADに参加して、今すぐ会場のデジタルトランスフォーメーションの旅を始めましょう。',
     'about.cta.primary': 'メディアパートナーになる',
     'about.cta.secondary': '私は広告主です',
+
+    // Get Started
+    'getStarted.title': '始める準備はできましたか？',
+    'getStarted.subtitle': '役割を選択して、AZIO1ADによるデジタル広告革命を体験してください。',
+    'getStarted.advertiser.title': '私は広告主です',
+    'getStarted.advertiser.subtitle': 'Advertiser',
+    'getStarted.advertiser.description': '広告枠を購入して、ブランドや商品を宣伝したい。',
+    'getStarted.advertiser.feature1': '台湾全土のプレミアム会場を閲覧',
+    'getStarted.advertiser.feature2': '透明な価格、オンライン注文',
+    'getStarted.advertiser.feature3': '即時配信、パフォーマンス追跡',
+    'getStarted.advertiser.button': '私は広告主です',
+    'getStarted.mediaOwner.title': '私は媒体主です',
+    'getStarted.mediaOwner.subtitle': 'Media Owner',
+    'getStarted.mediaOwner.description': 'スクリーンを登録して、トラフィックを収益化したい。',
+    'getStarted.mediaOwner.feature1': '複数会場のスクリーンを簡単管理',
+    'getStarted.mediaOwner.feature2': '広告枠と販売価格をカスタマイズ',
+    'getStarted.mediaOwner.feature3': '自動スケジュールと収益レポート',
+    'getStarted.mediaOwner.button': '私は媒体主です',
 
     // Footer
     'footer.description.1': '台湾初の脱仲介型DOOH SaaSプラットフォーム。',
