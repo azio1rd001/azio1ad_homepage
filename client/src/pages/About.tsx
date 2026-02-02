@@ -5,8 +5,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function About() {
+  const { t } = useLanguage();
+
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
@@ -44,13 +47,13 @@ export default function About() {
             className="max-w-4xl mx-auto"
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-              連結人與場域的數位橋樑
+              {t('about.hero.title')}
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-light" style={{color: '#000233'}}>
               智林國際股份有限公司
             </p>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              我們致力於透過科技創新，整合線上與線下資源，為企業與消費者創造無縫的數位體驗。
+              {t('about.hero.description')}
             </p>
           </motion.div>
         </div>
@@ -210,7 +213,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold mb-2 text-foreground">創新 Innovation</h3>
               <p className="text-muted-foreground">
-                不斷突破技術邊界，重新定義傳統商業模式。
+                {t('about.mission.description')}
               </p>
             </div>
             <div className="text-center p-6">
@@ -219,7 +222,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold mb-2 text-foreground">整合 Integration</h3>
               <p className="text-muted-foreground">
-                串聯線上數據與線下場域，打造無縫體驗。
+                {t('about.vision.description')}
               </p>
             </div>
             <div className="text-center p-6">
@@ -228,7 +231,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold mb-2 text-foreground">共贏 Win-Win</h3>
               <p className="text-muted-foreground">
-                為場域主、廣告主與消費者創造三方共贏的價值。
+                {t('about.team.description')}
               </p>
             </div>
           </div>
@@ -239,21 +242,21 @@ export default function About() {
       <section className="py-20 bg-gradient-to-t from-primary/5 to-background border-t border-border">
         <div className="container px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-            準備好加入我們的生態系了嗎？
+            {t('caseStudies.cta.title')}
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            無論您是場域主還是廣告主，AZIO1AD 都能為您創造新的價值。
+            {t('features.cta.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://app.azio1ad.com/admin/login" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 text-lg h-12">
-                我是場域主
+                {t('mediaOwner.hero.cta')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </a>
             <a href="https://app.azio1ad.com/login" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="border-border text-foreground hover:bg-muted px-8 text-lg h-12">
-                我是廣告主
+                {t('advertiser.hero.cta')}
               </Button>
             </a>
           </div>
