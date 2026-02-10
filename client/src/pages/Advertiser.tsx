@@ -17,7 +17,7 @@ export default function Advertiser() {
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-transparent z-10"></div>
             <img 
-              src="/images/advertiser-hero.png" 
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663308253989/oSsDiTNfekOuFaBB.png" 
               alt="Advertiser Dashboard" 
               className="w-full h-full object-cover opacity-60"
             />
@@ -99,7 +99,7 @@ export default function Advertiser() {
               <div className="lg:w-1/2 order-2 lg:order-1">
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border bg-background">
                   <img 
-                    src="/images/advertiser-marketplace.png" 
+                    src="https://private-us-east-1.manuscdn.com/sessionFile/Ug0JWyLsyZ7BxYK21T3VaX/sandbox/AbxYmfYjxoEll45Fi1gEXJ-img-1_1770709879000_na1fn_YWR2ZXJ0aXNlci1tYXJrZXRwbGFjZS12Mg.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvVWcwSld5THN5WjdCeFlLMjFUM1ZhWC9zYW5kYm94L0FieFltZllqeG9FbGw0NUZpMWdFWEotaW1nLTFfMTc3MDcwOTg3OTAwMF9uYTFmbl9ZV1IyWlhKMGFYTmxjaTF0WVhKclpYUndiR0ZqWlMxMk1nLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=aA-j~t3Y7JmWSV8-UIU3giik7IWN79PvCxfNK0KOtya2isM6ELPQ7KCJzPjuHqnkDVQyEqitBU2YacU2PjHB8Agt~6bBoEfGpiImSIENz8pDXmYF0uY~cocwTV~fcEZ9GOZT-CQPo6lyP2My0IB920KYiGJPQJrTarNAbC326Fq9RbNVyBWacaOpkNURqX653XHEH3MVo36SiihM2c2gCDK~aHc7BNovQmN8Z2R-ysdYwvqAMp9N1biM8jNjJL-xgFqpWvb5L1AYtACrE~dmPadGT-7J9kwdktMP9v0VQmFDB3HOtFEuwMCEPjygWnkKXCjAkyhfUAy15pXzGxeEyg__" 
                     alt="Ad Marketplace Interface" 
                     className="w-full h-auto"
                   />
@@ -189,7 +189,7 @@ export default function Advertiser() {
               <div className="lg:w-1/2">
                 <div className="relative rounded-2xl overflow-hidden shadow-xl border border-border bg-white">
                   <img 
-                    src="/images/advertiser-interaction.png" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663308253989/FzBgTOIGgObGueig.png" 
                     alt="Ticket & Interaction Integration" 
                     className="w-full h-auto hover:scale-105 transition-transform duration-700"
                   />

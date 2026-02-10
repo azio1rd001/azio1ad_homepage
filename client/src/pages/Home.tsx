@@ -17,7 +17,7 @@ export default function Home() {
         <section className="relative py-20 md:py-32 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
-              src="/images/hero-bg.jpg" 
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663308253989/aigwWEuvEXEtXYgW.jpg" 
               alt="Background" 
               className="w-full h-full object-cover opacity-50"
             />
@@ -68,7 +68,7 @@ export default function Home() {
               <div className="lg:w-1/2 relative animate-in slide-in-from-right-10 duration-1000 fade-in delay-200">
                 <div className="relative z-10 rounded-xl overflow-hidden shadow-2xl border border-white/20 glass-panel transform hover:scale-[1.02] transition-transform duration-500">
                   <img 
-                    src="/images/hero-dashboard.png" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663308253989/VvujoelrHtOXLhvZ.png" 
                     alt="AZIO1AD Dashboard Interface" 
                     className="w-full h-auto"
                   />
@@ -130,7 +130,7 @@ export default function Home() {
               <div className="md:w-1/2 order-2 md:order-1">
                 <div className="relative rounded-2xl overflow-hidden shadow-xl border border-border">
                   <img 
-                    src="/images/feature-ad-management.png" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663308253989/ReCXSylqAbCFqyUX.png" 
                     alt="Ad Management System" 
                     className="w-full h-auto hover:scale-105 transition-transform duration-700"
                   />
@@ -188,7 +188,7 @@ export default function Home() {
               <div className="md:w-1/2">
                 <div className="relative rounded-2xl overflow-hidden shadow-xl border border-border">
                   <img 
-                    src="/images/feature-integration.png" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663308253989/wWJwTWXQJKiUVMDl.png" 
                     alt="System Integration" 
                     className="w-full h-auto hover:scale-105 transition-transform duration-700"
                   />
@@ -201,7 +201,7 @@ export default function Home() {
         {/* CTA Section */}
         <section className="py-24 bg-foreground text-background relative overflow-hidden">
           <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/images/hero-bg.jpg')] bg-cover bg-center mix-blend-overlay"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663308253989/aigwWEuvEXEtXYgW.jpg')] bg-cover bg-center mix-blend-overlay"></div>
           </div>
           
           <div className="container relative z-10 mx-auto px-4 text-center">

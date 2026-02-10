@@ -32,7 +32,7 @@ export default function About() {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/about-hero.png" 
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663308253989/AhdVKqrurysyjidX.png" 
             alt="Connecting People and Spaces" 
             className="w-full h-full object-cover opacity-40"
           />
@@ -89,7 +89,7 @@ export default function About() {
               className="relative rounded-2xl overflow-hidden shadow-2xl border border-border"
             >
               <img 
-                src="/images/about-evolution.png" 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663308253989/YJuTdMzePeehtrmx.png" 
                 alt="From Ticketing to Advertising" 
                 className="w-full h-auto"
               />
@@ -182,7 +182,7 @@ export default function About() {
             className="mt-16 rounded-2xl overflow-hidden border border-border shadow-xl"
           >
             <img 
-              src="/images/about-ecosystem.png" 
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663308253989/wkWzTYhiWoHIOGLR.png" 
               alt="AZIO1 Ecosystem" 
               className="w-full h-auto"
             />

@@ -17,7 +17,7 @@ export default function MediaOwner() {
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-gradient-to-l from-zinc-900 via-zinc-900/90 to-transparent z-10"></div>
             <img 
-              src="/images/media-owner-hero.png" 
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663308253989/tAUmguiOdldoNTTl.png" 
               alt="Media Owner Venue" 
               className="w-full h-full object-cover opacity-50"
             />
@@ -133,7 +133,7 @@ export default function MediaOwner() {
               <div className="lg:w-1/2">
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border bg-background">
                   <img 
-                    src="/images/media-owner-dashboard.png" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663308253989/FKreoCxLQmLvWcGx.png" 
                     alt="Media Owner Dashboard" 
                     className="w-full h-auto"
                   />
@@ -208,7 +208,7 @@ export default function MediaOwner() {
               <div className="lg:w-1/2 order-1 lg:order-2">
                 <div className="relative rounded-2xl overflow-hidden shadow-xl border border-border">
                   <img 
-                    src="/images/media-owner-revenue.png" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663308253989/oXutCQNWueAXhxdK.png" 
                     alt="Revenue Generation" 
                     className="w-full h-auto hover:scale-105 transition-transform duration-700"
                   />
