@@ -30,6 +30,7 @@ export default function Pricing() {
         { name: t('pricing.feature.api'), included: false },
       ],
       cta: t('pricing.plan.trial.cta'),
+      link: "https://app.azio1ad.com/admin/login",
       variant: "outline" as const,
     },
     {
@@ -48,6 +49,7 @@ export default function Pricing() {
         { name: t('pricing.feature.api'), included: false },
       ],
       cta: t('pricing.plan.business.cta'),
+      link: "https://app.azio1ad.com/admin/login",
       variant: "default" as const,
     },
     {
@@ -65,6 +67,7 @@ export default function Pricing() {
         { name: t('pricing.feature.apiPos'), included: true },
       ],
       cta: t('pricing.plan.flagship.cta'),
+      link: "mailto:oscar@linkst-tw.com",
       variant: "outline" as const,
     },
   ];
@@ -147,13 +150,15 @@ export default function Pricing() {
                   ))}
                 </ul>
 
-                <Button 
-                  variant={plan.variant} 
-                  className="w-full" 
-                  size="lg"
-                >
-                  {plan.cta}
-                </Button>
+                <a href={plan.link} target={plan.link.startsWith('http') ? "_blank" : undefined} rel={plan.link.startsWith('http') ? "noopener noreferrer" : undefined} className="w-full">
+                  <Button 
+                    variant={plan.variant} 
+                    className="w-full" 
+                    size="lg"
+                  >
+                    {plan.cta}
+                  </Button>
+                </a>
               </div>
             ))}
           </div>
