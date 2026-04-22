@@ -47,7 +47,7 @@ export default function CaseStudies() {
                   className="relative rounded-2xl overflow-hidden shadow-2xl"
                 >
                   <img 
-                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663308253989/VkJQJAIEaLgNXOIt.gif" 
+                    src="/images/content/case-study-nangang.gif" 
                     alt="南港展覽館數位廣告螢幕" 
                     className="w-full h-auto object-cover"
                   />
